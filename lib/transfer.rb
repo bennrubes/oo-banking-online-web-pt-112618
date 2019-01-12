@@ -13,7 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-    
+    @sender.balance
   end
   
   def reverse_transaction
