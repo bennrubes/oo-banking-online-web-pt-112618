@@ -26,7 +26,7 @@ class Transfer
     if valid? && receiver.balance > amount && self.status == "pending"
       receiver.balance -= amount
       sender.deposit(amount)
-      self.status = "complete"
+      self.status = "reversed"
     else
       reject_transfer
     end
